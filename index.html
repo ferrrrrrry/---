@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Shopify с Екатериной Булгаковой</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Mulish:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cur"></div>
+    <div class="cursor-ring" id="ring"></div>
+
+    <nav id="nav">
+      <a class="nav-logo" href="#">BULGAKOVA</a>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#tariffs">Тарифы</a></li>
+        <li><a href="#shops">Магазины</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a class="nav-cta" href="#form">Начать</a>
+      <div class="hamburger" id="ham" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mob-menu">
+      <a href="#about" onclick="toggleMenu()">Обо мне</a>
+      <a href="#tariffs" onclick="toggleMenu()">Тарифы</a>
+      <a href="#shops" onclick="toggleMenu()">Магазины</a>
+      <a href="#faq" onclick="toggleMenu()">FAQ</a>
+      <a href="#form" onclick="toggleMenu()" style="color: var(--green)"
+        >Оставить заявку</a
+      >
+    </div>
+
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span>Shopify Dropshipping</span><span>///</span>
+        <span>Международный рынок</span><span>///</span>
+        <span>Система запуска</span><span>///</span> <span>Первые продажи</span
+        ><span>///</span> <span>Наставничество</span><span>///</span>
+        <span>@bulgakova_kt</span><span>///</span>
+        <span>Shopify Dropshipping</span><span>///</span>
+        <span>Международный рынок</span><span>///</span>
+        <span>Система запуска</span><span>///</span> <span>Первые продажи</span
+        ><span>///</span> <span>Наставничество</span><span>///</span>
+        <span>@bulgakova_kt</span><span>///</span>
+      </div>
+    </div>
+
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-quote">
+          <div class="hero-quote-dot"></div>
+          <span>«Если не сейчас, то когда?»</span>
+          <span style="color: rgba(198, 255, 52, 0.45); font-size: 16px"></span>
+            @bulgakova_kt</span
+          >
+        </div>
+        <h1>Твой путь<br />в <em class="hero-title">Shopify</em><br />начинается здесь</h1>
+        <p class="hero-sub">Пошаговая система дропшипинга</p>
+        <p class="hero-fine">от регистрации до первых продаж</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#tariffs">Выбрать формат</a>
+          <a class="btn-outline" href="#about">Оставить заявку</a>
+        </div>
+        <div class="scroll-hint">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-left">
+          <div class="reveal">
+            <div class="about-avatar">
+              <div class="avatar-glow"></div>
+              <div class="avatar-placeholder">EB</div>
+              <div class="avatar-label">
+                <small>Основатель системы</small>Екатерина Булгакова
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num" data-target="100">0</span>
+                <span class="stat-label">проектов запущено</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num" style="font-size: 24px">$20K+</span>
+                <span class="stat-label">вложено в знания</span>
+              </div>
+              <div class="stat-card" style="grid-column: 1/-1">
+                <span class="stat-num" style="font-size: 18px"
+                  >🌍 Международный рынок</span
+                >
+                <span class="stat-label">дропшипинг + собственный продукт</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="section-tag tag-bounce tag-spin reveal">Обо мне</div>
+          <h2 class="section-title reveal reveal-delay-1 title-about">
+            Меня зовут<br /><span class="title-glow title-underline about-title"
+              >Екатерина Булгакова</span
+            >
+          </h2>
+          <div style="height: 32px"></div>
+          <p class="reveal reveal-delay-2">
+            Я не пришла в Shopify с готовым пониманием, как всё работает.
+            Наоборот — мой путь начался с
+            <strong>ошибок, потерь и попыток</strong> разобраться в том, что на
+            самом деле даёт результат.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Я тестировала, собирала магазины, теряла деньги и время, пока не
+            выстроила систему, которая <strong>действительно работает</strong>.
+            За это время я вложила более 20 000$ в знания, практику и разбор
+            реальных кейсов.
+          </p>
+          <ul class="about-list reveal reveal-delay-3">
+            <li>более 100 запущенных проектов</li>
+            <li>работа с международным рынком</li>
+            <li>
+              запуск дропшипинг-моделей и магазинов с собственным продуктом
+            </li>
+            <li>партнёрская работа и первые результаты клиентов</li>
+          </ul>
+          <div class="about-closing reveal reveal-delay-4">
+            <div class="about-closing-icon">💡</div>
+            <div>
+              Я не продаю «лёгкие деньги». Shopify — это инструмент, который
+              даёт результат тем, кто <strong>понимает, что делает</strong>. Моя
+              задача — передать систему, по которой ты запустишь магазин,
+              получишь первые продажи и сможешь масштабироваться.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="how-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">
+          Как это работает
+        </div>
+        <h2 class="section-title reveal reveal-delay-1 title-how">
+          Как ты выходишь на <br /> <span class="title-glow">результат</span>
+        </h2>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">01</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Регистрация и настройка Shopify</div>
+              <div class="step-desc">
+                Создаём аккаунт, выбираем тариф, настраиваем базовую
+                инфраструктуру магазина.
+              </div>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">02</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Выбор ниши и товара</div>
+              <div class="step-desc">
+                Анализируем рынок, находим прибыльную нишу и товар с потенциалом
+                на международном рынке.
+              </div>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">03</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Сборка магазина</div>
+              <div class="step-desc">
+                Создаём конвертирующий магазин: дизайн, страницы, карточки
+                товаров, copywriting.
+              </div>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">04</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Подключение платёжных систем</div>
+              <div class="step-desc">
+                Shopify Payments, Stripe, Payoneer — корректная настройка приёма
+                платежей от международных клиентов.
+              </div>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">05</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Запуск трафика</div>
+              <div class="step-desc">
+                Настраиваем рекламу, тестируем аудитории, получаем первые
+                заказы.
+              </div>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-left">
+              <div class="step-num">06</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-title">Масштабирование</div>
+              <div class="step-desc">
+                Увеличиваем бюджеты, расширяем ассортимент, оптимизируем
+                прибыль.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tariffs" id="tariffs">
+      <div class="tariffs-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Тарифы</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Выбери формат<br /><span class="title-glow title-underline"
+            >работы</span
+          >
+        </h2>
+        <div class="tariffs-grid">
+          <div class="tariff-card reveal">
+            <div class="tariff-icon">📖</div>
+            <div class="tariff-name">Гайд</div>
+            <div class="tariff-price">3 900 ₽</div>
+            <div class="tariff-price-note">Сжатый вход в систему</div>
+            <div class="tariff-desc">
+              Разберёшься как устроен Shopify-бизнес и подходит ли тебе эта
+              модель.
+            </div>
+            <ul class="tariff-features">
+              <li><span class="check">✓</span>Как устроен Shopify-бизнес</li>
+              <li><span class="check">✓</span>С чего начинается запуск</li>
+              <li><span class="check">✓</span>Как формируется прибыль</li>
+              <li><span class="check">✓</span>Подходит ли тебе модель</li>
+            </ul>
+            <a class="btn-primary" href="#form">Выбрать тариф</a>
+          </div>
+          <div class="tariff-card reveal reveal-delay-1">
+            <div class="tariff-icon">🧩</div>
+            <div class="tariff-name">Самостоятельный запуск</div>
+            <div class="tariff-price">73 000 ₽</div>
+            <div class="tariff-price-note">Полный материал для старта</div>
+            <div class="tariff-desc">
+              Проходишь систему и запускаешь магазин самостоятельно по
+              проверенной модели.
+            </div>
+            <ul class="tariff-features">
+              <li><span class="check">✓</span>Полный материал системы</li>
+              <li><span class="check">✓</span>Структура запуска</li>
+              <li><span class="check">✓</span>Логика работы</li>
+              <li><span class="check">✓</span>1 Zoom-созвон</li>
+            </ul>
+            <a class="btn-primary" href="#form">Выбрать тариф</a>
+          </div>
+          <div class="tariff-card featured reveal reveal-delay-2">
+            <div class="tariff-badge">Рекомендуем</div>
+            <div class="tariff-icon">🚀</div>
+            <div class="tariff-name">Наставничество</div>
+            <div class="tariff-price">197 000 ₽</div>
+            <div class="tariff-price-note">2 месяца полного сопровождения</div>
+            <div class="tariff-desc">
+              Полное сопровождение с нуля до результата с личным разбором
+              проекта.
+            </div>
+            <ul class="tariff-features">
+              <li><span class="check">✓</span>2 месяца работы</li>
+              <li><span class="check">✓</span>Регулярные Zoom-созвоны</li>
+              <li><span class="check">✓</span>Разбор твоего проекта</li>
+              <li><span class="check">✓</span>Помощь на каждом этапе</li>
+              <li><span class="check">✓</span>Контроль и корректировка</li>
+            </ul>
+            <div class="tariff-key">
+              -> Ты не просто запускаешь — ты понимаешь систему и можешь
+              повторить результат множество раз
+            </div>
+            <a class="btn-primary" href="#form">Выбрать тариф</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" id="proof">
+      <div class="proof-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Суть</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Это не курс — это
+          <span class="title-glow title-underline">система заработка</span>
+        </h2>
+        <div class="proof-big reveal">SYSTEM</div>
+        <p class="proof-body reveal reveal-delay-2">
+          Ты не покупаешь обучение ради информации. Ты заходишь в модель, где
+          <strong>каждый шаг ведёт к конкретному результату</strong> — запуску
+          магазина и первым продажам.<br /><br />Без лишней теории. Без «воды».
+          Только то, что <strong>реально используется в работе</strong> и
+          приносит деньги.
+        </p>
+        <div class="proof-number reveal reveal-delay-3">
+          Основа — практический опыт стоимостью $20 000+
+        </div>
+      </div>
+    </section>
+
+    <section class="shops" id="shops">
+      <div class="shops-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Портфолио</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Мои <span class="title-glow">магазины</span>
+        </h2>
+        <p
+          style="color: var(--muted); margin-top: 16px; font-size: 15px"
+          class="reveal reveal-delay-2"
+        >
+          Примеры запущенных проектов — скоро здесь появятся реальные кейсы
+        </p>
+        <div class="shops-grid">
+          <div class="shop-card reveal">
+            <div class="shop-card-icon">🛒</div>
+            <div class="shop-card-label">Магазин 1</div>
+          </div>
+          <div class="shop-card reveal reveal-delay-1">
+            <div class="shop-card-icon">🛒</div>
+            <div class="shop-card-label">Магазин 2</div>
+          </div>
+          <div class="shop-card reveal reveal-delay-2">
+            <div class="shop-card-icon">🛒</div>
+            <div class="shop-card-label">Магазин 3</div>
+          </div>
+          <div class="shop-card reveal reveal-delay-3">
+            <div class="shop-card-icon">🛒</div>
+            <div class="shop-card-label">Магазин 4</div>
+          </div>
+          <div class="shop-card reveal reveal-delay-4">
+            <div class="shop-card-icon">🛒</div>
+            <div class="shop-card-label">Магазин 5</div>
+          </div>
+          <div
+            class="shop-card reveal reveal-delay-4"
+            style="border-style: dashed"
+          >
+            <div class="shop-card-add">+</div>
+            <div class="shop-card-label">Добавить</div>
+          </div>
+        </div>
+        <div class="shops-dots" id="shops-dots"></div>
+      </div>
+    </section>
+
+    <section class="partnership" id="partnership">
+      <div class="partnership-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Партнёрство</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Запуск без этапа<br /><span class="title-glow title-underline"
+            >«с нуля»</span
+          >
+        </h2>
+        <div class="partnership-card reveal reveal-delay-2">
+          <p style="color: #aaa; font-size: 15px; max-width: 560px">
+            Если не хочешь тратить время на сборку магазина — войди в уже
+            готовую систему и сразу перейди к запуску.
+          </p>
+          <div class="partnership-price">149 000 ₽</div>
+          <div class="partnership-sub">
+            Быстрый вход в готовую систему с совместным запуском
+          </div>
+          <div class="partnership-features">
+            <div class="pf-item">
+              <div class="pf-dot"></div>
+              <span>Готовый Shopify-магазин</span>
+            </div>
+            <div class="pf-item">
+              <div class="pf-dot"></div>
+              <span>Подключённые платёжные решения</span>
+            </div>
+            <div class="pf-item">
+              <div class="pf-dot"></div>
+              <span>Настроенная инфраструктура</span>
+            </div>
+            <div class="pf-item">
+              <div class="pf-dot"></div>
+              <span>Помощь в запуске и тесте продаж</span>
+            </div>
+          </div>
+          <div class="partnership-keys">
+            <div class="pk-item">
+              Ты не собираешь с нуля — ты сразу запускаешься
+            </div>
+            <div class="pk-item">
+              Это самый быстрый способ выйти на первые результаты
+            </div>
+          </div>
+          <a class="btn-tg" href="https://t.me/bulgakova_kt" target="_blank"
+            >✈ Написать в Telegram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="guide" id="guide">
+      <div class="guide-inner">
+        <div>
+          <div class="section-tag tag-bounce tag-spin reveal">Гайд</div>
+          <h2 class="section-title reveal reveal-delay-1">
+            Вход в <span class="title-glow">Shopify</span>
+          </h2>
+          <div class="guide-price reveal reveal-delay-2">3 900 ₽</div>
+          <p style="color: #aaa; font-size: 15px" class="reveal reveal-delay-2">
+            Сжатая версия системы для понимания модели.
+          </p>
+          <ul class="guide-features reveal reveal-delay-3">
+            <li>Как устроен Shopify-бизнес</li>
+            <li>С чего начинается запуск</li>
+            <li>Как формируется прибыль</li>
+            <li>Подходит ли тебе эта модель</li>
+          </ul>
+          <a class="btn-primary reveal reveal-delay-4" href="#form"
+            >Получить гайд</a
+          >
+        </div>
+        <div class="guide-visual reveal reveal-delay-2">
+          <div class="guide-visual-text">GUIDE</div>
+          <div class="guide-visual-label">Shopify System</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment" id="payment">
+      <div class="payment-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Инфраструктура</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Подключение<br /><span class="title-glow">платёжной системы</span>
+        </h2>
+        <p class="payment-body reveal reveal-delay-2">
+          Один из ключевых этапов — приём платежей. Я помогаю настроить всё
+          корректно с первого раза.
+        </p>
+        <div class="payment-icons reveal reveal-delay-3">
+          <div class="payment-icon">Shopify Payments</div>
+          <div class="payment-icon">Stripe</div>
+          <div class="payment-icon">Payoneer</div>
+        </div>
+        <a class="btn-primary reveal reveal-delay-4" href="#form">Связаться</a>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="faq-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">FAQ</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Часто задаваемые<br /><span class="title-glow">вопросы</span>
+        </h2>
+        <div class="faq-list reveal reveal-delay-2">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Это вообще реально с нуля? У меня нет опыта
+              <div class="faq-arrow">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Да, можно с нуля. Система выстроена так, что ты проходишь путь
+                по шагам — от регистрации до запуска. Но важно понимать:
+                результат зависит не от «опыта», а от того, насколько ты реально
+                внедряешь.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Сколько времени занимает выйти на первые деньги?
+              <div class="faq-arrow">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                В партнёрстве первые результаты могут появляться уже в первые
+                недели запуска. Есть кейсы, где люди выходят на первые несколько
+                тысяч долларов достаточно быстро.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              В чём разница между партнёрством и наставничеством?
+              <div class="faq-arrow">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Партнёрство — быстрый вход в готовую систему. Наставничество —
+                полный разбор с нуля. Ты не просто запускаешь магазин, а
+                понимаешь, как всё устроено и как повторять результат дальше.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Это дропшипинг? И вообще это сейчас работает?
+              <div class="faq-arrow">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Да, в том числе дропшипинг. Но ты работаешь с международным
+                рынком, а не локальным. И именно за счёт этого модель остаётся
+                актуальной и даёт результат.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              А если у меня не получится?
+              <div class="faq-arrow">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Главный вопрос — не «получится или нет», а будешь ли ты делать.
+                Система уже проверена. Если ты готов включаться — результат
+                вопрос времени.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-section" id="form">
+      <div class="form-inner">
+        <div class="section-tag tag-bounce tag-spin reveal">Заявка</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Оставь заявку —<br /><span class="title-glow">я свяжусь с тобой</span>
+        </h2>
+        <p class="form-sub reveal reveal-delay-2">
+          Расскажи о себе и выбранном формате. Я отвечу в Telegram.
+        </p>
+        <div class="form-card reveal reveal-delay-3">
+          <div class="form-group">
+            <label class="form-label">Имя</label
+            ><input
+              class="form-input"
+              type="text"
+              placeholder="Как тебя зовут?"
+              id="f-name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Телефон</label
+            ><input
+              class="form-input"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              id="f-phone"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Username Telegram</label
+            ><input
+              class="form-input"
+              type="text"
+              placeholder="@username"
+              id="f-tg"
+            />
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Интересующий формат</label>
+            <select
+              class="form-input"
+              id="f-format"
+              style="appearance: none; cursor: pointer"
+            >
+              <option value="" disabled selected>Выбери формат</option>
+              <option>Гайд — 3 900 ₽</option>
+              <option>Самостоятельный запуск — 73 000 ₽</option>
+              <option>Наставничество — 197 000 ₽</option>
+              <option>Партнёрство — 149 000 ₽</option>
+            </select>
+          </div>
+          <div style="margin-top: 8px">
+            <button
+              class="btn-primary"
+              style="width: 100%; font-size: 20px; padding: 14px"
+              onclick="submitForm()"
+            >
+              Отправить заявку ->
+            </button>
+          </div>
+          <p class="form-note">
+            Нажимая кнопку, ты соглашаешься на обработку персональных данных
+          </p>
+          <div
+            id="form-success"
+            style="
+              display: none;
+              margin-top: 20px;
+              padding: 16px;
+              background: rgba(26, 13, 46, 0.85);
+              border: 1px solid rgba(191, 95, 255, 0.28);
+              border-radius: var(--r12);
+              color: var(--green);
+              font-family: var(--px);
+              font-size: 20px;
+              text-align: center;
+            "
+          >
+            [OK] Заявка отправлена! Ожидай сообщения в Telegram.
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <footer>
+      <div class="footer-logo">BULGAKOVA.SHOPIFY</div>
+      <div class="footer-links">
+        <a href="#tariffs">Тарифы</a><a href="#shops">Магазины</a>
+        <a href="#form">Заявка</a
+        ><a href="https://t.me/bulgakova_kt" target="_blank">Telegram</a>
+      </div>
+      <div class="footer-tg">@bulgakova_kt</div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
